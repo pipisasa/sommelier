@@ -1,0 +1,33 @@
+@import './header';
+@import './footer';
+@import './sidebar';
+@import './welcome';
+@import './product-detail';
+@import './products-list';
+
+
+.scroll-snap__container{
+  scroll-snap-type: y mandatory;
+  // height: 100vh;
+  height: calc(100vh - 3.6rem);
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scroll-snap__item{
+    scroll-snap-align: start;
+    // height: 100vh;
+    min-height: calc(100vh - 3.6rem);
+  }
+
+
+  @media screen and (max-width: 992px) {
+    scroll-snap-type: none;
+  }
+}
+
+// .pip__animate__in{
+//   visibility: hidden;
+// }

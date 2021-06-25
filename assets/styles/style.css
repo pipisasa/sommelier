@@ -1,0 +1,7 @@
+.product-detail .product-detail__img__wrapper::after{
+  background-image: url('/assets/images/grapes_2.png');
+}
+
+.product-detail .product-detail__img__wrapper::before{
+  background-image: url('/assets/images/grapes_1.png');
+}

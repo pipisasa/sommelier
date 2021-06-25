@@ -1,0 +1,26 @@
+.header{
+  background-color: $primary;
+  // position: fixed;
+  // right: 0;
+  // left: 0;
+  // top: 0;
+  z-index: 999;
+  .navbar{
+    color: #FFF;
+    .navbar-brand{
+      color: $light;
+      font-size: 2rem;
+      line-height: 2rem;
+      &:hover{
+        color: $secondary;
+      }
+    }
+    .nav-link{
+      color: #FFF;
+
+      &:hover{
+        color: $secondary;
+      }
+    }
+  }
+}
