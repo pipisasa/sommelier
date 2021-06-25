@@ -110,4 +110,12 @@
       display: none;
     }
   }
+
+  @media screen and (max-width: 525px){
+    .welcome__content{
+      .welcome__title{
+        font-size: 4rem;
+      }
+    }
+  }
 }
