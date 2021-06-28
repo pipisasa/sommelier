@@ -1,5 +1,17 @@
 {
   "projects": {
     "default": "sommelier-winekg"
+  },
+  "targets": {
+    "sommelier-winekg": {
+      "hosting": {
+        "v1": [
+          "sommelier-winekg"
+        ],
+        "v2": [
+          "sommelier-winekg-v2"
+        ]
+      }
+    }
   }
 }

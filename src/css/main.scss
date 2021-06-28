@@ -1,14 +1,14 @@
 @import './abstracts/variables';
 
 //? Vendors
-@import './vendors/bootstrap';
+// @import './vendors/bootstrap';
 
 //? Base
 @import './base/reset';
 @import './base/typography';
 
 //? Components
-@import './components/buttons';
+@import './components/components';
 
 //? Layout
 @import './layout/layout';

@@ -3,25 +3,14 @@ import './css/main.scss';
 import $ from "jquery";
 window.jQuery = $;
 window.$ = $;
-// function handleScroll(){
-//   $('.pip__animate:not(.pip__animate__animated)').each((_, el)=>{
-//     const $el = $(el);
-//     const $parent = $el.closest('.scroll-snap__item');
-//     const top = $parent.get(0).getBoundingClientRect().top;
-//     if( top < 100 && top > 0){
-//       $el.addClass($el.attr('data-pip-animate'));
-//       $el.removeClass('pip__animate__in');
-//       $el.addClass('pip__animate__animated');
-//     }
-//   })
-// }
+let map;
 
-// $('.scroll-snap__container').on('scroll', handleScroll);
-
-$('.order-now-btn').on('mouseenter', function(e){
-  $($(e.target).closest('.product-detail')[0].querySelector('.product-detail__img__wrapper')).addClass('hovered');
-})
-
-$('.order-now-btn').on('mouseleave', function(e){
-  $($(e.target).closest('.product-detail')[0].querySelector('.product-detail__img__wrapper')).removeClass('hovered');
-})
+$( document ).ready(function() {
+  window.DG.then(function () {
+    map = DG.map('map', {
+      center: [42.872554,74.604565],
+      zoom: 18.36
+    });
+    window.DG.marker([42.872554,74.604565]).addTo(map).bindPopup('ул. Токтогула 99');
+  });
+});
