@@ -4,7 +4,9 @@
     overflow: hidden;
     .product__image{
       width: 100%;
-
+      aspect-ratio: 1/1;
+      object-position: center;
+      object-fit: cover;
     }
     .product__price{
       position: absolute;
